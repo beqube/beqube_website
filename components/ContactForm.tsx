@@ -64,9 +64,9 @@ const ContactForm = ({ scriptUrl }: ContactFormProps) => {
   if (isSubmitted) {
     return (
       <section className="section-padding">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-primary/10 border border-primary/20 rounded-2xl p-12">
+        <div className="px-0 md:container-custom">
+          <div className="max-w-4xl md:mx-auto text-center">
+            <div className="bg-primary/10 border border-primary/20 rounded-2xl p-4 md:p-12">
               <CheckCircle className="w-16 h-16 text-primary mx-auto mb-4" />
               <h3 className="font-poppins text-2xl font-bold text-primary mb-2">
                 Message Sent Successfully!
@@ -83,8 +83,8 @@ const ContactForm = ({ scriptUrl }: ContactFormProps) => {
 
   return (
     <section>
-      <div className="container-custom">
-        <div className="max-w-4xl mx-auto">
+      <div className="px-0 md:container-custom">
+        <div className="max-w-4xl md:mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-playfair text-3xl md:text-5xl font-bold text-primary mb-4">
               Get In Touch
@@ -95,7 +95,7 @@ const ContactForm = ({ scriptUrl }: ContactFormProps) => {
             </p>
           </div>
 
-          <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-8 md:p-12 border border-gray-200 relative overflow-hidden">
+          <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-4 px-2 md:p-12 border border-gray-200 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#2B337E22] via-[#2B337E] to-[#2B337E22]" />
             <div className="absolute inset-0 rounded-3xl border border-gray-100 shadow-inner pointer-events-none z-0" />
 

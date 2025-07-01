@@ -1,4 +1,13 @@
-import { CheckCircle, Target, Eye, Users } from "lucide-react";
+import {
+  CheckCircle,
+  Target,
+  Eye,
+  Users,
+  TrendingUp,
+  Building2,
+  BarChart3,
+  Database,
+} from "lucide-react";
 import Image from "next/image";
 import TeamSection from "./TeamSection"; // Import client component
 
@@ -38,19 +47,40 @@ export default function About() {
 
   const services = [
     {
-      title: "Retail & Residential Advisory",
+      icon: Target,
+      title: "Marketing",
       description:
-        "Comprehensive guidance for both commercial retail spaces and residential properties, ensuring optimal investment decisions.",
+        "Comprehensive marketing solutions including digital, traditional, and innovative strategies to boost your real estate brand.",
     },
     {
-      title: "Market Research & Strategy",
+      icon: Users,
+      title: "Residential Consultancy",
       description:
-        "In-depth market analysis and strategic planning to maximize your real estate portfolio performance.",
+        "Expert guidance for buying, selling, and investing in residential properties with personalized solutions.",
     },
     {
-      title: "End-to-End Transactions",
+      icon: Building2,
+      title: "Commercial Advisory",
       description:
-        "Complete transaction management from initial consultation to final closing, ensuring smooth processes.",
+        "Strategic retail and commercial real estate solutions to maximize your property investments and returns.",
+    },
+    {
+      icon: TrendingUp,
+      title: "Strategic Planning",
+      description:
+        "In-depth market research and strategic advisory services to make data-driven real estate decisions.",
+    },
+    {
+      icon: BarChart3,
+      title: "Market Intelligence",
+      description:
+        "Advanced market analysis and trend forecasting to identify profitable investment opportunities.",
+    },
+    {
+      icon: Database,
+      title: "CRM Solutions",
+      description:
+        "Integrated customer relationship management systems to streamline your real estate business operations.",
     },
   ];
 
@@ -107,12 +137,15 @@ export default function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div
                 key={index}
                 className="bg-white rounded-xl p-8 shadow-lg card-hover"
               >
+                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                  <service.icon className="w-8 h-8 text-primary" />
+                </div>
                 <h3 className="font-poppins text-xl font-semibold text-primary mb-4">
                   {service.title}
                 </h3>

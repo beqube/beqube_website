@@ -16,23 +16,11 @@ const Team = () => {
       image: "/images/profile-1.jpg",
       description: "Specializes in commercial and retail property advisory",
     },
-    {
-      name: "Emily Rodriguez",
-      position: "Market Analyst",
-      image: "/images/profile-1.jpg",
-      description: "Expert in market research and investment strategies",
-    },
-    {
-      name: "David Thompson",
-      position: "Residential Specialist",
-      image: "/images/profile-1.jpg",
-      description: "Dedicated to helping families find their perfect homes",
-    },
   ];
 
   return (
     <section className="section-padding bg-gray-50">
-      <div className="container-custom">
+      <div className="container-custom py-0 px-8 md:py-0 md:px-0 ">
         <div className="text-center mb-16">
           <h2 className="font-playfair text-3xl md:text-5xl font-bold text-primary mb-4">
             Meet Our Team
@@ -42,7 +30,7 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10 max-w-2xl mx-auto">
           {teamMembers.map((member, index) => (
             <div
               key={index}
