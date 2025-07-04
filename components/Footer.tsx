@@ -13,28 +13,26 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-slate-800 via-slate-900 to-[#2B337E]/80 text-white">
-      <div className="container-custom py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 items-start">
-          {/* Logo - Aligned with column heading and link height */}
-          <div className="flex flex-col items-start justify-start">
+      <div className="container-custom py-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6 items-center">
+          {/* Logo - Centered on mobile, aligned left on desktop */}
+          <div className="flex flex-col items-center md:items-left justify-start px-4 md:px-0">
             <Image
               src="/images/Logo-footer.png"
               alt="Beqube Consultancy Logo"
-              width={300}
-              height={340}
-              className="object-contain"
+              width={180}
+              height={200}
+              className="object-contain md:w-[220px] md:h-[250px]"
               priority
             />
           </div>
 
-          {/* Quick Links */}
-          <div className="space-y-4 text-center md:text-left">
-            <div className="h-[60px] flex items-center justify-center md:justify-start">
-              <h3 className="font-poppins font-semibold text-xl text-yellow-400">
-                Quick Links
-              </h3>
-            </div>
-            <ul className="space-y-2 text-base">
+          {/* Quick Links - Aligned to start vertically */}
+          <div className="text-center md:text-left flex flex-col justify-start">
+            <h3 className="font-poppins font-semibold text-lg text-yellow-400 mb-2">
+              Quick Links
+            </h3>
+            <ul className="space-y-1 text-sm">
               {["Home", "About Us", "Contact"].map((item, index) => (
                 <li key={index}>
                   <Link
@@ -52,35 +50,33 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
-          <div className="space-y-4 text-center md:text-left">
-            <div className="h-[60px] flex items-center justify-center md:justify-start">
-              <h3 className="font-poppins font-semibold text-xl text-yellow-400">
-                Contact Info
-              </h3>
-            </div>
-            <div className="space-y-3 text-base">
-              <div className="flex items-center space-x-3 group justify-center md:justify-start">
+          {/* Contact Info - Aligned to start vertically */}
+          <div className="text-center md:text-left flex flex-col justify-start">
+            <h3 className="font-poppins font-semibold text-lg text-yellow-400 mb-2">
+              Contact Info
+            </h3>
+            <div className="space-y-2 text-sm">
+              <div className="flex items-center space-x-2 group justify-center md:justify-start">
                 <MapPin
-                  size={18}
+                  size={16}
                   className="text-yellow-400 group-hover:scale-110 transition-transform duration-300"
                 />
                 <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
                   Kalyan
                 </span>
               </div>
-              <div className="flex items-center space-x-3 group justify-center md:justify-start">
+              <div className="flex items-center space-x-2 group justify-center md:justify-start">
                 <Phone
-                  size={18}
+                  size={16}
                   className="text-yellow-400 group-hover:scale-110 transition-transform duration-300"
                 />
                 <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
                   8369490500
                 </span>
               </div>
-              <div className="flex items-center space-x-3 group justify-center md:justify-start">
+              <div className="flex items-center space-x-2 group justify-center md:justify-start">
                 <Mail
-                  size={18}
+                  size={16}
                   className="text-yellow-400 group-hover:scale-110 transition-transform duration-300"
                 />
                 <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
@@ -90,14 +86,12 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Social Media Icons */}
-          <div className="space-y-4 text-center md:text-left">
-            <div className="h-[60px] flex items-center justify-center md:justify-start">
-              <h3 className="font-poppins font-semibold text-xl text-yellow-400">
-                Connect
-              </h3>
-            </div>
-            <div className="flex space-x-5 justify-center md:justify-start">
+          {/* Social Media Icons - Aligned to start vertically */}
+          <div className="text-center md:text-left flex flex-col justify-start">
+            <h3 className="font-poppins font-semibold text-lg text-yellow-400 mb-2">
+              Connect
+            </h3>
+            <div className="flex space-x-4 justify-center md:justify-start">
               {[
                 { Icon: Twitter, href: "#" },
                 { Icon: Facebook, href: "#" },
@@ -111,7 +105,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition duration-300 hover:scale-110"
                 >
-                  <Icon size={24} />
+                  <Icon size={20} />
                 </a>
               ))}
             </div>
@@ -119,8 +113,8 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom */}
-        <div className="border-t border-gray-500 mt-12 pt-8 text-center">
-          <p className="text-gray-400 text-sm ">
+        <div className="border-t border-gray-500 mt-6 pt-4 text-center">
+          <p className="text-gray-400 text-xs">
             © {new Date().getFullYear()} Beqube Consultancy. All rights
             reserved.
           </p>

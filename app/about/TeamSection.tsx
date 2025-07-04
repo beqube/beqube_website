@@ -22,19 +22,6 @@ const teamMembers = [
     image: "/images/profile-1.jpg",
     skills: ["Commercial Advisory", "Retail Leasing", "Portfolio Management"],
   },
-  {
-    name: "Emily Rodriguez",
-    role: "Market Analyst",
-    description:
-      "Emily is a detail-oriented market analyst who brings clarity and data-backed insights into property trends and investment opportunities.",
-    bio: "With a background in data science and finance, she crafts predictive models that guide client strategies.",
-    image: "/images/profile-1.jpg",
-    skills: [
-      "Data Modeling",
-      "Investment Forecasting",
-      "Real Estate Analytics",
-    ],
-  },
 ];
 
 export default function TeamSection() {
@@ -51,7 +38,7 @@ export default function TeamSection() {
       <div className="container-custom">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-playfair text-3xl md:text-5xl font-bold text-primary mb-4">
+            <h2 className="font-roboto text-3xl md:text-5xl font-bold text-primary mb-4">
               Leadership Team
             </h2>
             <p className="text-lg text-gray-700">

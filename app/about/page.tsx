@@ -87,7 +87,7 @@ export default function About() {
   return (
     <div className="pt-20">
       {/* Header Section */}
-      <section className="relative h-96 flex items-center justify-center">
+      <section className="relative h-60 md:h-96 flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -95,17 +95,29 @@ export default function About() {
           }}
         />
         <div className="relative z-10 text-center text-white">
-          <h1 className="font-playfair text-4xl md:text-7xl font-bold mb-4 text-white">
+          <h1 className="font-roboto text-4xl md:text-7xl font-bold mb-4 text-white">
             About Us
           </h1>
         </div>
       </section>
 
-      {/* Who We Are */}
-      <section className="section-padding">
-        <div className="container-custom">
+      {/* Who We Are - FIXED SECTION */}
+      <section className="section-padding relative bg-gray-50 overflow-hidden">
+        {/* Background Logo with proper visibility */}
+        <div
+          className="absolute inset-0 bg-no-repeat bg-center bg-contain opacity-15"
+          style={{
+            backgroundImage: `url('/images/Logo-03.png')`,
+            backgroundSize: "50%",
+          }}
+        />
+
+        {/* Subtle overlay for better text contrast */}
+        <div className="absolute inset-0 bg-gradient-to-br from-white/60 via-gray-50/80 to-white/60" />
+
+        <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-playfair text-3xl md:text-5xl font-bold text-primary mb-8">
+            <h2 className="font-roboto text-3xl md:text-5xl font-bold text-primary mb-8">
               Who We Are
             </h2>
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed md:text-xl">
@@ -128,7 +140,7 @@ export default function About() {
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="font-playfair text-3xl md:text-5xl font-bold text-primary mb-4">
+            <h2 className="font-roboto text-3xl md:text-5xl font-bold text-primary mb-4">
               What We Do
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
@@ -163,7 +175,7 @@ export default function About() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-playfair text-3xl md:text-5xl font-bold text-primary mb-8">
+              <h2 className="font-roboto text-3xl md:text-5xl font-bold text-primary mb-8">
                 Our Mission & Vision
               </h2>
 

@@ -22,7 +22,7 @@ const Team = () => {
     <section className="section-padding bg-gray-50">
       <div className="container-custom py-0 px-8 md:py-0 md:px-0 ">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-3xl md:text-5xl font-bold text-primary mb-4">
+          <h2 className="font-roboto text-3xl md:text-5xl font-bold text-primary mb-4">
             Meet Our Team
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">

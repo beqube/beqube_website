@@ -86,7 +86,7 @@ const ContactForm = ({ scriptUrl }: ContactFormProps) => {
       <div className="px-0 md:container-custom">
         <div className="max-w-4xl md:mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-playfair text-3xl md:text-5xl font-bold text-primary mb-4">
+            <h2 className="font-roboto text-3xl md:text-5xl font-bold text-primary mb-4">
               Get In Touch
             </h2>
             <p className="text-lg md:text-xl text-gray-600">

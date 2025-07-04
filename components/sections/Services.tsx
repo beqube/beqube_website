@@ -217,7 +217,7 @@ const Services = () => {
     <section className="section-padding bg-gray-50">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-3xl md:text-5xl font-bold text-primary mb-4">
+          <h2 className="font-roboto text-3xl md:text-5xl font-bold text-primary mb-4">
             What We Do
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">

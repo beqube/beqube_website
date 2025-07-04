@@ -17,7 +17,7 @@ const Mission = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 text-left">
             {/* Mission */}
             <div className="space-y-6">
-              <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400">
+              <h2 className="font-roboto text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400">
                 Our Mission
               </h2>
               <p className="text-lg md:text-xl lg:text-2xl leading-relaxed">
@@ -30,7 +30,7 @@ const Mission = () => {
 
             {/* Vision */}
             <div className="space-y-6">
-              <h2 className="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400">
+              <h2 className="font-roboto text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400">
                 Our Vision
               </h2>
               <p className="text-lg md:text-xl lg:text-2xl leading-relaxed">

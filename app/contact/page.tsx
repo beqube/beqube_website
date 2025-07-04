@@ -37,7 +37,7 @@ export default function Contact() {
   return (
     <div className="pt-20">
       {/* Header with Background Image */}
-      <section className="relative h-96 flex items-center justify-center">
+      <section className="relative h-60 md:h-96 flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -45,7 +45,7 @@ export default function Contact() {
           }}
         />
         <div className="relative z-10 text-center text-white">
-          <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-4 text-white">
+          <h1 className="font-roboto text-4xl md:text-6xl font-bold mb-4 text-white">
             Contact Us
           </h1>
         </div>
