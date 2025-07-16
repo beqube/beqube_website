@@ -62,7 +62,7 @@ const Hero = () => {
       {/* Foreground Content */}
       <div className="relative z-20 text-center text-white container-custom">
         <div className="max-w-4xl mx-auto space-y-6">
-          <h1 className="font-roboto text-4xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in-up text-white">
+          <h1 className="font-montserrat text-4xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in-up text-white">
             {slides[currentSlide].headline}
           </h1>
 

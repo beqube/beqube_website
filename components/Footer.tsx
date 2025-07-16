@@ -29,10 +29,10 @@ const Footer = () => {
 
           {/* Quick Links - Aligned to start vertically */}
           <div className="text-center md:text-left flex flex-col justify-start">
-            <h3 className="font-poppins font-semibold text-lg text-yellow-400 mb-2">
+            <h3 className="font-montserrat font-semibold text-lg md:text-xl text-yellow-400 mb-2">
               Quick Links
             </h3>
-            <ul className="space-y-1 text-sm">
+            <ul className="space-y-1 text-sm md:text-lg">
               {["Home", "About Us", "Contact"].map((item, index) => (
                 <li key={index}>
                   <Link
@@ -52,13 +52,13 @@ const Footer = () => {
 
           {/* Contact Info - Aligned to start vertically */}
           <div className="text-center md:text-left flex flex-col justify-start">
-            <h3 className="font-poppins font-semibold text-lg text-yellow-400 mb-2">
+            <h3 className="font-montserrat font-semibold text-lg md:text-xl text-yellow-400 mb-2">
               Contact Info
             </h3>
-            <div className="space-y-2 text-sm">
+            <div className="space-y-2 text-sm md:text-base">
               <div className="flex items-center space-x-2 group justify-center md:justify-start">
                 <MapPin
-                  size={16}
+                  size={18}
                   className="text-yellow-400 group-hover:scale-110 transition-transform duration-300"
                 />
                 <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
@@ -67,7 +67,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 group justify-center md:justify-start">
                 <Phone
-                  size={16}
+                  size={18}
                   className="text-yellow-400 group-hover:scale-110 transition-transform duration-300"
                 />
                 <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
@@ -76,7 +76,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2 group justify-center md:justify-start">
                 <Mail
-                  size={16}
+                  size={18}
                   className="text-yellow-400 group-hover:scale-110 transition-transform duration-300"
                 />
                 <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
@@ -88,7 +88,7 @@ const Footer = () => {
 
           {/* Social Media Icons - Aligned to start vertically */}
           <div className="text-center md:text-left flex flex-col justify-start">
-            <h3 className="font-poppins font-semibold text-lg text-yellow-400 mb-2">
+            <h3 className="font-montserrat font-semibold text-lg md:text-xl text-yellow-400 mb-2">
               Connect
             </h3>
             <div className="flex space-x-4 justify-center md:justify-start">
@@ -105,7 +105,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition duration-300 hover:scale-110"
                 >
-                  <Icon size={20} />
+                  <Icon size={25} />
                 </a>
               ))}
             </div>

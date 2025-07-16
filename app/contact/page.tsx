@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm"; // adjust the path if needed
 
 export default function Contact() {
   const GOOGLE_SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycbwXGkCPMQ5AFyM9zqKZx7_3S9nRKhRZ_ZK7XDPm4vIrHZOH5vmZKJsdhWIiqhMdhD8r/exec";
+    "https://script.google.com/macros/s/AKfycby72smOlfUkRDl7dBjdVpI3-U6FKtPNaWo1x_XwA0bbVJCb_mfyfH2nB0dxVEZuYCpxkQ/exec";
 
   const contactInfo = [
     {
@@ -45,7 +45,7 @@ export default function Contact() {
           }}
         />
         <div className="relative z-10 text-center text-white">
-          <h1 className="font-roboto text-4xl md:text-6xl font-bold mb-4 text-white">
+          <h1 className="font-montserrat text-4xl md:text-6xl font-bold mb-4 text-white">
             Contact Us
           </h1>
         </div>
@@ -63,10 +63,10 @@ export default function Contact() {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="font-poppins text-2xl font-bold text-primary mb-6">
+                <h2 className="font-montserrat text-2xl font-bold text-primary mb-6">
                   Get in Touch
                 </h2>
-                <p className="text-gray-600 leading-relaxed mb-8">
+                <p className="text-gray-600 leading-relaxed mb-8 font-open-sans">
                   We&apos;re here to help you with all your real estate needs.
                   Whether you&apos;re looking to buy, sell, or invest, our team
                   of experts is ready to provide you with personalized guidance
@@ -81,7 +81,7 @@ export default function Contact() {
                       <info.icon className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-poppins font-semibold text-primary mb-2">
+                      <h3 className="font-montserrat font-semibold text-primary mb-2">
                         {info.title}
                       </h3>
                       <div className="space-y-1">
@@ -97,11 +97,11 @@ export default function Contact() {
               </div>
 
               {/* Map Placeholder */}
-              <div className="mt-8">
+              {/* <div className="mt-8">
                 <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
                   <p className="text-gray-500">Interactive Map Coming Soon</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -110,10 +110,10 @@ export default function Contact() {
       {/* CTA Section */}
       <section className="section-padding bg-primary">
         <div className="container-custom text-center text-white">
-          <h2 className="font-poppins text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="font-montserrat text-3xl md:text-4xl font-bold mb-4">
             Ready to Get Started?
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <p className="text-xl mb-8 max-w-2xl mx-auto font-montserrat">
             Schedule a consultation with us and take the first step towards
             achieving your real estate goals.
           </p>

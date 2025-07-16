@@ -2,7 +2,7 @@
 import ContactForm from "../ContactForm";
 
 const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbwXGkCPMQ5AFyM9zqKZx7_3S9nRKhRZ_ZK7XDPm4vIrHZOH5vmZKJsdhWIiqhMdhD8r/exec";
+  "https://script.google.com/macros/s/AKfycby72smOlfUkRDl7dBjdVpI3-U6FKtPNaWo1x_XwA0bbVJCb_mfyfH2nB0dxVEZuYCpxkQ/exec";
 
 const ContactSection = () => {
   return (

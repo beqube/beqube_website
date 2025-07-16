@@ -68,7 +68,7 @@ const ContactForm = ({ scriptUrl }: ContactFormProps) => {
           <div className="max-w-4xl md:mx-auto text-center">
             <div className="bg-primary/10 border border-primary/20 rounded-2xl p-4 md:p-12">
               <CheckCircle className="w-16 h-16 text-primary mx-auto mb-4" />
-              <h3 className="font-poppins text-2xl font-bold text-primary mb-2">
+              <h3 className="font-montserrat text-2xl font-bold text-primary mb-2">
                 Message Sent Successfully!
               </h3>
               <p className="text-primary/80">
@@ -86,7 +86,7 @@ const ContactForm = ({ scriptUrl }: ContactFormProps) => {
       <div className="px-0 md:container-custom">
         <div className="max-w-4xl md:mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-roboto text-3xl md:text-5xl font-bold text-primary mb-4">
+            <h2 className="font-montserrat text-3xl md:text-5xl font-bold text-primary mb-4">
               Get In Touch
             </h2>
             <p className="text-lg md:text-xl text-gray-600">
@@ -114,7 +114,7 @@ const ContactForm = ({ scriptUrl }: ContactFormProps) => {
                   />
                   <label
                     htmlFor="name"
-                    className="absolute left-0 top-1 text-sm md:text-base text-primary transition-all peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-sm md:peer-focus:text-base peer-focus:text-primary"
+                    className="absolute left-0 top-1 text-sm md:text-base text-primary transition-all peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-sm md:peer-focus:text-base peer-focus:text-primary font-montserrat"
                   >
                     Full Name *
                   </label>
@@ -129,11 +129,11 @@ const ContactForm = ({ scriptUrl }: ContactFormProps) => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full pt-8 md:pt-12 pb-2 border-b-2 border-gray-200 bg-transparent focus:border-primary focus:outline-none peer"
+                    className="w-full pt-8 md:pt-12 pb-2 border-b-2 border-gray-200 bg-transparent focus:border-primary focus:outline-none peer font-montserrat"
                   />
                   <label
                     htmlFor="email"
-                    className="absolute left-0 top-1 text-sm md:text-base text-primary transition-all peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-sm md:peer-focus:text-base peer-focus:text-primary"
+                    className="absolute left-0 top-1 text-sm md:text-base text-primary transition-all peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-sm md:peer-focus:text-base peer-focus:text-primary font-montserrat"
                   >
                     Email Address *
                   </label>
@@ -151,11 +151,11 @@ const ContactForm = ({ scriptUrl }: ContactFormProps) => {
                   required
                   pattern="[0-9]{10}"
                   maxLength={10}
-                  className="w-full pt-8 md:pt-12 pb-2 border-b-2 border-gray-200 bg-transparent focus:border-primary focus:outline-none peer"
+                  className="w-full pt-8 md:pt-12 pb-2 border-b-2 border-gray-200 bg-transparent focus:border-primary focus:outline-none peer font-montserrat"
                 />
                 <label
                   htmlFor="mobile"
-                  className="absolute left-0 top-1 text-sm md:text-base text-primary transition-all peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-sm md:peer-focus:text-base peer-focus:text-primary"
+                  className="absolute left-0 top-1 text-sm md:text-base text-primary transition-all peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-sm md:peer-focus:text-base peer-focus:text-primary font-montserrat"
                 >
                   Mobile Number *
                 </label>
@@ -174,7 +174,7 @@ const ContactForm = ({ scriptUrl }: ContactFormProps) => {
                 />
                 <label
                   htmlFor="message"
-                  className="absolute left-0 top-1 text-sm md:text-base text-primary transition-all peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-sm md:peer-focus:text-base peer-focus:text-primary"
+                  className="absolute left-0 top-1 text-sm md:text-base text-primary transition-all peer-placeholder-shown:top-6 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-1 peer-focus:text-sm md:peer-focus:text-base peer-focus:text-primary font-montserrat"
                 >
                   Message *
                 </label>

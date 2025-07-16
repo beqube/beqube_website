@@ -21,27 +21,27 @@ export default function About() {
   const values = [
     {
       icon: CheckCircle,
-      title: "Integrity",
+      title: "INTEGRITY",
       description:
         "We conduct business with the highest ethical standards and transparency.",
     },
     {
       icon: Target,
-      title: "Excellence",
+      title: "LEADERSHIP",
       description:
-        "We strive for excellence in every service we provide to our clients.",
+        "We lead by example, guiding clients and our team with vision, expertise, and confidence.",
     },
     {
       icon: Eye,
-      title: "Innovation",
+      title: "INNOVATION",
       description:
         "We embrace innovative solutions to meet evolving market demands.",
     },
     {
       icon: Users,
-      title: "Client-First",
+      title: "COLLABORATION",
       description:
-        "Our clients' success is our primary focus and measure of achievement.",
+        "We foster strong partnerships through open communication and shared goals.",
     },
   ];
 
@@ -95,7 +95,7 @@ export default function About() {
           }}
         />
         <div className="relative z-10 text-center text-white">
-          <h1 className="font-roboto text-4xl md:text-7xl font-bold mb-4 text-white">
+          <h1 className="font-montserrat text-4xl md:text-7xl font-bold mb-4 text-white">
             About Us
           </h1>
         </div>
@@ -117,10 +117,10 @@ export default function About() {
 
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-roboto text-3xl md:text-5xl font-bold text-primary mb-8">
+            <h2 className="font-montserrat text-3xl md:text-5xl font-bold text-primary mb-8">
               Who We Are
             </h2>
-            <div className="space-y-6 text-lg text-gray-700 leading-relaxed md:text-xl">
+            <div className="space-y-6 text-lg text-gray-700 leading-relaxed md:text-2xl">
               <p>
                 Beqube Consultancy is a full-service real estate consultancy
                 firm specializing in retail, residential, and strategic advisory
@@ -140,7 +140,7 @@ export default function About() {
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="font-roboto text-3xl md:text-5xl font-bold text-primary mb-4">
+            <h2 className="font-montserrat text-3xl md:text-5xl font-bold text-primary mb-4">
               What We Do
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
@@ -158,10 +158,10 @@ export default function About() {
                 <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
                   <service.icon className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="font-poppins text-xl font-semibold text-primary mb-4">
+                <h3 className="font-montserrat text-xl font-semibold text-primary mb-4">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed font-open-sans text-sm md:text-base">
                   {service.description}
                 </p>
               </div>
@@ -175,31 +175,33 @@ export default function About() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-roboto text-3xl md:text-5xl font-bold text-primary mb-8">
+              <h2 className="font-montserrat text-3xl md:text-5xl font-bold text-primary mb-8">
                 Our Mission & Vision
               </h2>
 
               <div className="space-y-8">
                 <div>
-                  <h3 className="font-poppins text-2xl font-semibold text-primary mb-4">
+                  <h3 className="font-montserrat text-2xl font-semibold text-primary mb-4">
                     Mission
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    To provide exceptional real estate consultancy services that
-                    empower our clients to make informed decisions and achieve
-                    their property investment goals through expert guidance and
-                    personalized solutions.
+                  <p className="text-gray-700 leading-relaxed font-open-sans text-sm md:text-lg">
+                    To provide exceptional real estate consultancy services with
+                    our seasoned leadership in delivering personalized,
+                    transparent and innovative real-estate solutions—empowering
+                    clients with confidence, clarity and superior
+                    investment outcomes
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="font-poppins text-2xl font-semibold text-primary mb-4">
+                  <h3 className="font-montserrat text-2xl font-semibold text-primary mb-4">
                     Vision
                   </h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    To be the leading real estate consultancy firm recognized
-                    for our integrity, innovation, and commitment to delivering
-                    outstanding results that exceed client expectations.
+                  <p className="text-gray-700 leading-relaxed font-open-sans text-sm md:text-lg">
+                    To be the trusted leader in the industry - where unwavering
+                    integrity, relentless commitment and tenacious grit drive us
+                    to exceed expectations, build lasting partnerships and
+                    deliver exceptional outcomes.
                   </p>
                 </div>
               </div>
@@ -214,10 +216,12 @@ export default function About() {
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <value.icon className="w-8 h-8 text-primary" />
                   </div>
-                  <h4 className="font-poppins font-bold text-primary mb-2">
+                  <h4 className="font-montserrat font-bold text-primary mb-2 text-sm md:text-lg">
                     {value.title}
                   </h4>
-                  <p className="text-sm text-gray-700">{value.description}</p>
+                  <p className="text-sm font-open-sans text-gray-700 text:sm md:text-base">
+                    {value.description}
+                  </p>
                 </div>
               ))}
             </div>

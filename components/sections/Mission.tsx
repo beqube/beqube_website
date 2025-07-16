@@ -7,7 +7,7 @@ const Mission = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-fixed"
         style={{
-          backgroundImage: `linear-gradient(rgba(43, 51, 126, 0.9), rgba(43, 51, 126, 0.9)), url('/images/mission-vision.webp')`,
+          backgroundImage: `linear-gradient(rgba(43, 51, 126, 0.9), rgba(43, 51, 126, 0.7)), url('/images/mission-vision.jpeg')`,
         }}
       />
 
@@ -17,27 +17,27 @@ const Mission = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 text-left">
             {/* Mission */}
             <div className="space-y-6">
-              <h2 className="font-roboto text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400">
+              <h2 className="font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400">
                 Our Mission
               </h2>
               <p className="text-lg md:text-xl lg:text-2xl leading-relaxed">
-                To provide exceptional real estate consultancy services that
-                empower our clients to make informed decisions and achieve their
-                property investment goals through expert guidance and
-                personalized solutions.
+                To provide exceptional real estate consultancy services with our
+                seasoned leadership in delivering personalized, transparent and
+                innovative real-estate solutions—empowering clients with
+                confidence, clarity and superior investment outcomes
               </p>
             </div>
 
             {/* Vision */}
             <div className="space-y-6">
-              <h2 className="font-roboto text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400">
+              <h2 className="font-montserrat text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-400">
                 Our Vision
               </h2>
               <p className="text-lg md:text-xl lg:text-2xl leading-relaxed">
-                To be the leading real estate consultancy firm recognized for
-                our integrity, innovation, and commitment to delivering
-                outstanding results that exceed client expectations in every
-                transaction.
+                To be the trusted leader in the industry - where unwavering
+                integrity, relentless commitment and tenacious grit drive us to
+                exceed expectations, build lasting partnerships and deliver
+                exceptional outcomes.
               </p>
             </div>
           </div>
