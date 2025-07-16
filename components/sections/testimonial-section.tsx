@@ -6,43 +6,43 @@ import Image from "next/image";
 const testimonials = [
   {
     id: 1,
-    company: "Urban Developers Ltd",
-    logo: "/placeholder.svg?height=60&width=120",
+    company: "Regency",
+    logo: "/images/testimonials/regency.webp",
     testimonial:
       "Their expertise in commercial real estate helped us secure prime locations for our retail chain. The team's market insights and negotiation skills are exceptional.",
-    name: "Sarah Johnson",
+    name: "Regency",
   },
   {
     id: 2,
-    company: "Metro Housing Corp",
-    logo: "/placeholder.svg?height=60&width=120",
+    company: "Panchratna",
+    logo: "/images/testimonials/panchratna.jpg",
     testimonial:
       "Outstanding service in residential property consulting. They guided us through complex zoning regulations and helped maximize our investment returns.",
-    name: "Michael Chen",
+    name: "",
   },
   {
     id: 3,
-    company: "Skyline Investments",
-    logo: "/placeholder.svg?height=60&width=120",
+    company: "Runwal garden city",
+    logo: "/images/testimonials/runwal-garden.png",
     testimonial:
       "Professional, reliable, and results-driven. Their market analysis and property valuation services have been instrumental in our portfolio growth.",
-    name: "Emily Rodriguez",
+    name: "",
   },
   {
     id: 4,
-    company: "Heritage Properties",
-    logo: "/placeholder.svg?height=60&width=120",
+    company: "Magus city",
+    logo: "/images/testimonials/magus.jpg",
     testimonial:
       "Exceptional knowledge of luxury real estate markets. They helped us navigate high-value transactions with confidence and precision.",
-    name: "David Thompson",
+    name: "",
   },
   {
     id: 5,
-    company: "Green Valley Estates",
-    logo: "/placeholder.svg?height=60&width=120",
+    company: "Kohinoor eden",
+    logo: "/images/testimonials/kohinoor.png",
     testimonial:
       "Their sustainable development consulting transformed our approach to eco-friendly construction. Truly forward-thinking professionals.",
-    name: "Lisa Park",
+    name: "",
   },
 ];
 
@@ -102,13 +102,13 @@ export default function TestimonialSection() {
                 className="flex-shrink-0 w-80 md:w-96 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-[#2b337e] hover:border-opacity-30"
               >
                 {/* Company Logo */}
-                <div className="flex items-center justify-center h-20 mb-4">
+                <div className="flex items-center justify-center h-24 md:h-36 mb-4">
                   <Image
                     src={testimonial.logo || "/placeholder.svg"}
                     alt={`${testimonial.company} logo`}
                     width={160}
                     height={80}
-                    className="max-h-16 w-auto object-contain opacity-80"
+                    className="max-h-16 md:max-h-20 w-auto object-contain opacity-80"
                   />
                 </div>
 
@@ -156,13 +156,7 @@ export default function TestimonialSection() {
                       style={{ backgroundColor: "#2b337e" }}
                     ></div>
                     <div>
-                      <p className="font-montserrat font-semibold text-gray-900 text-sm">
-                        {testimonial.name}
-                      </p>
-                      <p
-                        className="text-sm md:text-xs"
-                        style={{ color: "#2b337e" }}
-                      >
+                      <p className="font-montserrat font-bold text-gray-900 text-base md:text-lg">
                         {testimonial.company}
                       </p>
                     </div>
@@ -178,13 +172,13 @@ export default function TestimonialSection() {
                 className="flex-shrink-0 w-80 md:w-96 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 hover:border-[#2b337e] hover:border-opacity-30"
               >
                 {/* Company Logo */}
-                <div className="flex items-center justify-center h-20 mb-4">
+                <div className="flex items-center justify-center h-20 md:h-24 mb-4">
                   <Image
                     src={testimonial.logo || "/placeholder.svg"}
                     alt={`${testimonial.company} logo`}
                     width={160}
                     height={80}
-                    className="max-h-16 w-auto object-contain opacity-80"
+                    className="max-h-16 md:max-h-20 w-auto object-contain opacity-80"
                   />
                 </div>
 
@@ -232,10 +226,7 @@ export default function TestimonialSection() {
                       style={{ backgroundColor: "#2b337e" }}
                     ></div>
                     <div>
-                      <p className="font-semibold text-gray-900 text-sm">
-                        {testimonial.name}
-                      </p>
-                      <p className="text-xs" style={{ color: "#2b337e" }}>
+                      <p className="font-montserrat font-bold text-gray-900 text-base md:text-lg">
                         {testimonial.company}
                       </p>
                     </div>

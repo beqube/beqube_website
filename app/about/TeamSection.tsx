@@ -92,7 +92,7 @@ export default function TeamSection() {
                       <p className="text-primary font-semibold text-lg md:font-bold font-montserrat">
                         {member.role}
                       </p>
-                      <p className="text-gray-600 leading-relaxed mt-2 md:font-bold">
+                      <p className="text-gray-600 leading-relaxed mt-2 font-bold md:font-bold">
                         {member.bio}
                       </p>
                     </div>
