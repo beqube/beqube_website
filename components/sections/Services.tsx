@@ -34,7 +34,7 @@ const Services = () => {
         "Expert guidance for buying, selling, and investing in residential properties with personalized solutions.",
       extendedDescription:
         "Professional home valuation, neighborhood analysis, and complete transaction support from start to finish.",
-      image: "/images/services2.jpg",
+      image: "/images/services3.jpg",
     },
     {
       icon: Building2,
@@ -43,7 +43,7 @@ const Services = () => {
         "Strategic retail and commercial real estate solutions to maximize your property investments and returns.",
       extendedDescription:
         "Market positioning, lease negotiations, and investment optimization for commercial real estate success.",
-      image: "/images/services3.jpg",
+      image: "/images/services2.jpg",
     },
     {
       icon: TrendingUp,
