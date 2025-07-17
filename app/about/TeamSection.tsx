@@ -16,11 +16,11 @@ const teamMembers = [
   {
     name: "Yash Kunder",
     role: "Senior Consultant",
-    bio: "He has led strategic consulting projects across major metro cities and holds certifications in commercial real estate and portfolio analysis.",
+    bio: "he has led strategic consulting and channel sourcing in major metro cities in residential real estate and portfolio analysis.",
     description:
-      "Yash brings over a 8 years of hands-on experience in commercial and retail property investments. His analytical approach and deep market knowledge have been instrumental in structuring high-value deals.",
+      "Yash brings over 8 years of hands-on experience in channel diversity and channel sourcing and his analytical approach with deep market knowledge have been instrumental in structuring high-value deals",
     image: "/images/profile-1.jpg",
-    skills: ["Commercial Advisory", "Retail Leasing", "Portfolio Management"],
+    skills: ["Marketing advisory ", "Portfolio Management"],
   },
 ];
 
