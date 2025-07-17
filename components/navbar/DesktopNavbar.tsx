@@ -17,7 +17,7 @@ const DesktopNavbar = ({ isScrolled }: DesktopNavbarProps) => {
     { href: "/contact", label: "Contact" },
   ];
 
-  const whatsappNumber = "8451951123";
+  const whatsappNumber = "8369490500";
   const whatsappMessage =
     "I came across your website, I would like to have more information about your business";
 
