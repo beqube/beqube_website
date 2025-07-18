@@ -31,7 +31,7 @@ const testimonials = [
   {
     id: 4,
     company: "Magus city",
-    logo: "/images/testimonials/magus.jpg",
+    logo: "/images/testimonials/magus-1.png",
     testimonial:
       "Exceptional knowledge of luxury real estate markets. They helped us navigate high-value transactions with confidence and precision.",
     name: "",
