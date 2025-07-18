@@ -47,7 +47,6 @@ const testimonials = [
 ];
 
 export default function TestimonialSection() {
-  const [isPaused, setIsPaused] = useState(false);
   const [expandedTestimonials, setExpandedTestimonials] = useState<Set<number>>(
     new Set()
   );
@@ -84,15 +83,11 @@ export default function TestimonialSection() {
         </div>
 
         {/* Testimonial Carousel */}
-        <div
-          className="relative"
-          onMouseEnter={() => setIsPaused(true)}
-          onMouseLeave={() => setIsPaused(false)}
-        >
+        <div className="relative">
           <div
             className="flex gap-6 animate-scroll"
             style={{
-              animationPlayState: isPaused ? "paused" : "running",
+              animationPlayState: "running",
             }}
           >
             {/* First set of testimonials */}
@@ -236,10 +231,6 @@ export default function TestimonialSection() {
             ))}
           </div>
         </div>
-
-        {/* Gradient Overlays */}
-        {/* <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-gray-50 to-transparent pointer-events-none z-20"></div>
-        <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-gray-50 to-transparent pointer-events-none z-20"></div> */}
       </div>
 
       <style jsx>{`
