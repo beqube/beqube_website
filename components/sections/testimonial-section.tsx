@@ -15,7 +15,7 @@ const testimonials = [
   {
     id: 2,
     company: "Panchratna",
-    logo: "/images/testimonials/panchratna.jpg",
+    logo: "/images/testimonials/pancharatna-s.png",
     testimonial:
       "Outstanding service in residential property consulting. They guided us through complex zoning regulations and helped maximize our investment returns.",
     name: "",
