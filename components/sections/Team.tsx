@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import Button from "../Button";
 
 const Team = () => {
   const teamMembers = [
@@ -68,7 +69,13 @@ const Team = () => {
         </div>
 
         {/* Moved About Us Link below team grid */}
-        <div className="text-center">
+
+        <div className="text-center mt-4 md:mt-20">
+          <Link href="/about">
+            <Button text="About Us" />
+          </Link>
+        </div>
+        {/* <div className="text-center">
           <Link
             href="/about"
             className="btn-secondary inline-flex items-center space-x-2"
@@ -76,7 +83,7 @@ const Team = () => {
             <span>About Us</span>
             <ArrowRight size={20} />
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

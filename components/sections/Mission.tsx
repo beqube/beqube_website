@@ -1,22 +1,42 @@
 "use client";
-
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useInView } from "framer-motion";
 
 const Mission = () => {
   const missionRef = useRef(null);
   const visionRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const isMissionInView = useInView(missionRef, { once: false, amount: 0.3 });
-  const isVisionInView = useInView(visionRef, { once: false, amount: 0.3 });
+  const isMissionInView = useInView(missionRef, {
+    once: false,
+    amount: 0.1,
+    margin: "0px 0px -200px 0px",
+  });
+
+  const isVisionInView = useInView(visionRef, {
+    once: false,
+    amount: 0.1,
+    margin: "0px 0px -200px 0px",
+  });
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
     <section className="section-padding relative overflow-hidden">
       {/* Background Overlay with Mission Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-fixed"
+        className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(43, 51, 126, 0.9), rgba(43, 51, 126, 0.7)), url('/images/mission-vision.jpeg')`,
+          backgroundImage: `linear-gradient(rgba(43, 51, 126, 0.6), rgba(43, 51, 126, 0.6)), url('/images/mission-vision.jpeg')`,
         }}
       />
 
@@ -27,10 +47,12 @@ const Mission = () => {
             {/* Mission - Slides in from left */}
             <div
               ref={missionRef}
-              className="space-y-6 overflow-hidden"
+              className="space-y-6"
               style={{
                 transform: isMissionInView
                   ? "translateX(0%)"
+                  : isMobile
+                  ? "translateX(-30%)"
                   : "translateX(-100%)",
                 opacity: isMissionInView ? 1 : 0,
                 transition: "transform 1.5s ease-out, opacity 1s ease-in",
@@ -50,10 +72,12 @@ const Mission = () => {
             {/* Vision - Slides in from right */}
             <div
               ref={visionRef}
-              className="space-y-6 overflow-hidden"
+              className="space-y-6"
               style={{
                 transform: isVisionInView
                   ? "translateX(0%)"
+                  : isMobile
+                  ? "translateX(30%)"
                   : "translateX(100%)",
                 opacity: isVisionInView ? 1 : 0,
                 transition: "transform 1.5s ease-out, opacity 1s ease-in",

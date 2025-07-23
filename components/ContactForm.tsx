@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Send, CheckCircle } from "lucide-react";
+import Button from "./Button"; // ✅ Adjust path if needed
 
 interface ContactFormProps {
   scriptUrl: string;
@@ -180,24 +181,30 @@ const ContactForm = ({ scriptUrl }: ContactFormProps) => {
                 </label>
               </div>
 
+              {/* Submit Button */}
               <div className="text-center pt-4">
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="btn-primary inline-flex items-center space-x-2 text-lg px-6 py-3 md:px-8 md:py-4 disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {isSubmitting ? (
-                    <>
-                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
-                      <span>Sending...</span>
-                    </>
-                  ) : (
-                    <>
-                      <span>Send Message</span>
-                      <Send size={20} />
-                    </>
-                  )}
-                </button>
+                {isSubmitting ? (
+                  <button
+                    type="button"
+                    disabled
+                    className="inline-flex items-center space-x-2 text-lg px-6 py-3 md:px-8 md:py-4 opacity-50 cursor-not-allowed"
+                  >
+                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-[#2b337e]"></div>
+                    <span className="text-[#2b337e]">Sending...</span>
+                  </button>
+                ) : (
+                  <Button
+                    type="submit"
+                    text={
+                      (
+                        <span className="inline-flex items-center space-x-2">
+                          <span>Send Message</span>
+                          <Send size={20} />
+                        </span>
+                      ) as unknown as string // trick to satisfy the type check
+                    }
+                  />
+                )}
               </div>
             </form>
           </div>
