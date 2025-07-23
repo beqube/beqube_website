@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import RotatingCube from "../components/RotatingCube";
 import {
   Facebook,
   Twitter,
@@ -15,15 +18,12 @@ const Footer = () => {
     <footer className="bg-gradient-to-br from-slate-800 via-slate-900 to-[#2B337E]/80 text-white">
       <div className="container-custom py-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6 items-center">
-          {/* Logo - Centered on mobile, aligned left on desktop */}
+          {/* Logo Cube - Centered on mobile, aligned left on desktop */}
           <div className="flex flex-col items-center md:items-left justify-start px-4 md:px-0">
-            <Image
-              src="/images/Logo-footer.png"
-              alt="Beqube Consultancy Logo"
-              width={180}
-              height={200}
-              className="object-contain md:w-[220px] md:h-[250px]"
-              priority
+            <RotatingCube
+              logoPath="/images/Logo-footer.png"
+              logoAlt="Beqube Consultancy Logo"
+              size={100}
             />
           </div>
 
