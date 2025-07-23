@@ -20,7 +20,7 @@ const Team = () => {
   ];
 
   return (
-    <section className="section-padding bg-gray-50">
+    <section className="pt-16 md:pt-24 pb-16 md:pb-16 bg-gray-50">
       <div className="container-custom py-0 px-8 md:py-0 md:px-0 ">
         <div className="text-center mb-16">
           <h2 className="font-montserrat text-3xl md:text-5xl font-bold text-primary mb-4">
