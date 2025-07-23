@@ -8,8 +8,8 @@ import {
   BarChart3,
   Database,
 } from "lucide-react";
-import Image from "next/image";
 import TeamSection from "./TeamSection"; // Import client component
+import Card from "../../components/card"; // Import the new card component
 
 export const metadata = {
   title: "About Us - Beqube Consultancy",
@@ -111,10 +111,8 @@ export default function About() {
             backgroundSize: "50%",
           }}
         />
-
         {/* Subtle overlay for better text contrast */}
         <div className="absolute inset-0 bg-gradient-to-br from-white/60 via-gray-50/80 to-white/60" />
-
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-montserrat text-3xl md:text-5xl font-bold text-primary mb-8">
@@ -137,7 +135,7 @@ export default function About() {
       </section>
 
       {/* What We Do */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="font-montserrat text-3xl md:text-5xl font-bold text-primary mb-4">
@@ -148,78 +146,71 @@ export default function About() {
               consultancy
             </p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div
+              <Card
                 key={index}
-                className="bg-white rounded-xl p-8 shadow-lg card-hover"
-              >
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
-                  <service.icon className="w-8 h-8 text-primary" />
-                </div>
-                <h3 className="font-montserrat text-xl font-semibold text-primary mb-4">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed font-open-sans text-sm md:text-base">
-                  {service.description}
-                </p>
-              </div>
+                icon={service.icon}
+                title={service.title}
+                description={service.description}
+              />
             ))}
           </div>
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className="section-padding">
+      <section className="section-padding bg-white relative">
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Text Side */}
             <div>
-              <h2 className="font-montserrat text-3xl md:text-5xl font-bold text-primary mb-8">
+              <h2 className="font-montserrat text-3xl md:text-5xl font-bold text-[#2b337e] mb-8">
                 Our Mission & Vision
               </h2>
-
-              <div className="space-y-8">
-                <div>
-                  <h3 className="font-montserrat text-2xl font-semibold text-primary mb-4">
+              <div className="space-y-10">
+                {/* Mission */}
+                <div className="border-l-4 pl-6 border-[#2b337e]/70">
+                  <h3 className="font-montserrat text-2xl font-semibold text-[#2b337e] mb-2">
                     Mission
                   </h3>
-                  <p className="text-gray-700 leading-relaxed font-open-sans text-sm md:text-lg">
+                  <p className="text-gray-700 text-base md:text-lg leading-relaxed font-open-sans">
                     To provide exceptional real estate consultancy services with
                     our seasoned leadership in delivering personalized,
-                    transparent and innovative real-estate solutions—empowering
-                    clients with confidence, clarity and superior
-                    investment outcomes
+                    transparent, and innovative solutions — empowering clients
+                    with confidence, clarity, and superior investment outcomes.
                   </p>
                 </div>
 
-                <div>
-                  <h3 className="font-montserrat text-2xl font-semibold text-primary mb-4">
+                {/* Vision */}
+                <div className="border-l-4 pl-6 border-[#2b337e]/70">
+                  <h3 className="font-montserrat text-2xl font-semibold text-[#2b337e] mb-2">
                     Vision
                   </h3>
-                  <p className="text-gray-700 leading-relaxed font-open-sans text-sm md:text-lg">
-                    To be the trusted leader in the industry - where unwavering
-                    integrity, relentless commitment and tenacious grit drive us
-                    to exceed expectations, build lasting partnerships and
-                    deliver exceptional outcomes.
+                  <p className="text-gray-700 text-base md:text-lg leading-relaxed font-open-sans">
+                    To be the trusted leader in the industry — where unwavering
+                    integrity, relentless commitment, and tenacious grit drive
+                    us to exceed expectations, build lasting partnerships, and
+                    deliver exceptional outcomes.
                   </p>
                 </div>
               </div>
             </div>
 
+            {/* Visual/Values Grid Side */}
             <div className="grid grid-cols-2 gap-6">
               {values.map((value, index) => (
                 <div
                   key={index}
-                  className="text-center p-6 bg-gray-50 rounded-xl"
+                  className="text-center p-5 bg-[#f7f8fc] hover:bg-[#edf0fb] transition-all rounded-2xl shadow-sm"
                 >
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <value.icon className="w-8 h-8 text-primary" />
+                  <div className="w-14 h-14 bg-[#2b337e]/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <value.icon className="w-6 h-6 text-[#2b337e]" />
                   </div>
-                  <h4 className="font-montserrat font-bold text-primary mb-2 text-sm md:text-lg">
+                  <h4 className="font-montserrat font-semibold text-[#2b337e] mb-1 text-sm md:text-base uppercase tracking-wide">
                     {value.title}
                   </h4>
-                  <p className="text-sm font-open-sans text-gray-700 text:sm md:text-base">
+                  <p className="text-sm text-gray-600 font-open-sans">
                     {value.description}
                   </p>
                 </div>
