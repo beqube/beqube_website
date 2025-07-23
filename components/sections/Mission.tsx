@@ -32,19 +32,26 @@ const Mission = () => {
 
   return (
     <section className="section-padding relative overflow-hidden">
-      {/* Background Overlay with Mission Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `linear-gradient(rgba(43, 51, 126, 0.6), rgba(43, 51, 126, 0.6)), url('/images/mission-vision.jpeg')`,
-        }}
-      />
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      >
+        <source src="images/videos/mission-bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-[#2b337e] opacity-50 z-0" />
 
       {/* Foreground Content */}
       <div className="relative z-10 container-custom text-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 text-left">
-            {/* Mission - Slides in from left */}
+            {/* Mission */}
             <div
               ref={missionRef}
               className="space-y-6"
@@ -69,7 +76,7 @@ const Mission = () => {
               </p>
             </div>
 
-            {/* Vision - Slides in from right */}
+            {/* Vision */}
             <div
               ref={visionRef}
               className="space-y-6"
