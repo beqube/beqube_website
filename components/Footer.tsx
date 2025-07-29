@@ -1,8 +1,6 @@
 "use client";
-
 import Link from "next/link";
-import Image from "next/image";
-import RotatingCube from "../components/RotatingCube";
+import NewRotatingCube from "../components/NewRotatingCube";
 import {
   Facebook,
   Twitter,
@@ -20,13 +18,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6 items-center">
           {/* Logo Cube - Centered on mobile, aligned left on desktop */}
           <div className="flex flex-col items-center md:items-left justify-start px-4 md:px-0">
-            <RotatingCube
+            <NewRotatingCube
               logoPath="/images/Logo-footer.png"
               logoAlt="Beqube Consultancy Logo"
               size={100}
             />
           </div>
-
           {/* Quick Links - Aligned to start vertically */}
           <div className="text-center md:text-left flex flex-col justify-start">
             <h3 className="font-montserrat font-semibold text-lg md:text-xl text-yellow-400 mb-2">
@@ -49,7 +46,6 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-
           {/* Contact Info - Aligned to start vertically */}
           <div className="text-center md:text-left flex flex-col justify-start">
             <h3 className="font-montserrat font-semibold text-lg md:text-xl text-yellow-400 mb-2">
@@ -85,7 +81,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
           {/* Social Media Icons - Aligned to start vertically */}
           <div className="text-center md:text-left flex flex-col justify-start">
             <h3 className="font-montserrat font-semibold text-lg md:text-xl text-yellow-400 mb-2">
@@ -111,7 +106,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
         {/* Footer Bottom */}
         <div className="border-t border-gray-500 mt-6 pt-4 text-center">
           <p className="text-gray-400 text-xs">
