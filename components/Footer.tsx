@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import NewRotatingCube from "../components/NewRotatingCube";
+import Image from "next/image"; // Importing Image from Next.js
 import {
   Facebook,
   Twitter,
@@ -16,12 +16,14 @@ const Footer = () => {
     <footer className="bg-gradient-to-br from-slate-800 via-slate-900 to-[#2B337E]/80 text-white">
       <div className="container-custom py-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-6 items-center">
-          {/* Logo Cube - Centered on mobile, aligned left on desktop */}
+          {/* Logo - Using Image component from Next.js */}
           <div className="flex flex-col items-center md:items-left justify-start px-4 md:px-0">
-            <NewRotatingCube
-              logoPath="/images/Logo-footer.png"
-              logoAlt="Beqube Consultancy Logo"
-              size={100}
+            <Image
+              src="/images/Logo-footer.png"
+              alt="Beqube Consultancy Logo"
+              width={300} // Adjusting the size to make it big as possible
+              height={300} // Adjusting the size to make it big as possible
+              priority // Optional: Adds the "priority" flag for faster loading
             />
           </div>
           {/* Quick Links - Aligned to start vertically */}
